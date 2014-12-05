@@ -12,3 +12,8 @@ To clone the repo:
 ```
 git clone https://github.com/haeunchang/CS109-Project.git
 ```
+
+Organization 
+------------
+
+Upload ipython notebooks and cleaned datasets here. Organization to be more organized later.
