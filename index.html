@@ -1,36 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="wEbola: A Predictive Model for Ebola : A Harvard CS109 Final Project by Julie Chang, Luke Chang, Kevin Hu, Jiho Kang">
+    <title>wEbola: A Predictive Model for Ebola by lclukechang</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>wEbola: A Predictive Model for Ebola</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">wEbola: A Predictive Model for Ebola</h1>
+        <p class="header">A Harvard CS109 Final Project by Julie Chang, Luke Chang, Kevin Hu, Jiho Kang</p>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lclukechang/CS109-Project">View on GitHub</a>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/lclukechang/CS109-Project/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/lclukechang/CS109-Project/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/lclukechang/CS109-Project">View On GitHub</a></li>
+        </ul>
 
-          <h1 id="project_title">wEbola: A Predictive Model for Ebola</h1>
-          <h2 id="project_tagline">A Harvard CS109 Final Project by Julie Chang, Luke Chang, Kevin Hu, Jiho Kang</h2>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/lclukechang">lclukechang</a></p>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lclukechang/CS109-Project/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lclukechang/CS109-Project/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+      </header>
+      <section>
         <h3>
 <a id="overview-and-motivation" class="anchor" href="#overview-and-motivation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview and Motivation</h3>
 
@@ -79,24 +78,18 @@ We also cleaned up the dating processes. Especially in the dataset containing th
 
 <p>Given the number of data points we have versus the number of variables we ultimately use after applying principal component analysis, and given the complexity of the functional form we use, overfitting does not immediately seem to be problematic; however, to reinforce the robustness of the model, one area of extension could be using cross-validation instead of regression to determine the optimal parameters.</p>
 
-<p><img src="http://postimg.org/image/rmfp4gqlp/" alt=""></p>
+<p><img src="http://s30.postimg.org/8hcfupbxr/regr_fit.png" alt=""></p>
 
 <h3>
 <a id="final-analysis" class="anchor" href="#final-analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Final Analysis</h3>
 
 <p>In the end, our model fits quite well, which is pleasantly surprising because efforts to model disease outbreak are usually focused on one geographical unit (i.e. region). Our methods have generalized to examine disease outbreak across regions with model parameters dependent on demographic characteristics. Specifically, based on demographic data, we can robustly estimate the size of the population at risk, the speed of infection, and the time from infection to reported cases. In doing so, we have created a tool that not only has predictive power for the future spread of ebola, but also allows us to explore the effects of demographic characteristics on the spread of disease. By studying these effects, in the future we can predict disease hotspots and better understand how socioeconomic changes lead to epidemiological shifts.</p>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">wEbola: A Predictive Model for Ebola maintained by <a href="https://github.com/lclukechang">lclukechang</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
       </footer>
     </div>
-
-    
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
   </body>
 </html>
